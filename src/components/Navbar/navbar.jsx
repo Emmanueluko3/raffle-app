@@ -1,7 +1,7 @@
-import { Fragment } from "react";
+import React from "react";
 import { Disclosure } from "@headlessui/react";
-import Logo from "../../../public/assets/logo.svg";
-
+import Logo from "../../assets/images/logo.svg";
+// import { NavLink } from "react-router-dom";
 const navigation = [
   { name: "HOME", href: "#", current: true },
   { name: "CREATE", href: "#", current: false },
@@ -39,11 +39,13 @@ export default function Navbar() {
 
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
+                  {/* <NavLink to={"/"}> */}
                   <img
                     className="h-8 w-auto lg:block"
                     src={Logo}
                     alt="Your Company"
                   />
+                  {/* </NavLink> */}
                 </div>
                 <div className="hidden sm:block">
                   <div className="flex space-x-4">
